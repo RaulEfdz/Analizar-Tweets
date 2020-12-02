@@ -23,7 +23,7 @@ with open(Url_csv, newline='') as File:
                 if F != '':
                     if analysis.detect_language() == 'es':
                         resultado = analysis.translate(from_lang = 'es', to = 'en').sentiment.polarity
-                        time.sleep(5)
+                        time.sleep(2)
                         if len(str(resultado)) >2:
                             if resultado >= -1 and resultado < 0.5:
                                 RES.append('\n'+'N,'+elemento[1]) 
