@@ -29,7 +29,7 @@ with open(Url_csv, newline='') as File:
                                 RES.append('\n'+'N,'+elemento[1]) 
                             elif resultado >= 0.5 and resultado < 2:
                                 RES.append('\n'+'P,'+elemento[1])        
-print(RES)
+print('Escribiendo .csv')
 E_Document = open(Url_csv, 'w')
 with E_Document:
     writer = csv.writer(E_Document)
